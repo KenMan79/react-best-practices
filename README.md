@@ -157,7 +157,7 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 │   ├── /videos/
 |
 ├── /app or /src
-│   ├── /redux/  // See "Ducks"
+│   ├── /ducks/  // See "Ducks"
 │   ├── /scenes/
 │   |   ├── /App
 │   |   |   ├── /_/
@@ -201,7 +201,7 @@ Primitive components are those that take in only primitives as their props and a
 
 ```
 .
-├── /redux/
+├── /ducks/
     └── /MyDuck/
     |   ├── /__tests__/
     |   ├── /models  // See redux-orm
