@@ -86,3 +86,18 @@ const rootReducer = combineReducers({
 
 export default rootReducer;
 ```
+
+## Core Concepts
+
+### Sessions
+
+A class that provides an API to interact with your data. `schema.reducer()` creates a Session class internally, however you can create Sessions by calling `schema.from(entities)` that works with the schema in an immutable way.
+
+### Models
+
+An encapsulated representation of the underlying state structure. Getters and Setters are used to abstract away all interaction.
+
+Once a Model object has been created, it turns into a denormalized state. That means it is a O(1) complexity for access.
+
+### Updates
+
