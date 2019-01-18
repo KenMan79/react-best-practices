@@ -255,6 +255,11 @@ https://sinonjs.org/
 
 Spies, stubs and mocks
 
+**Cypress**  
+https://www.cypress.io/
+
+Testing suite that provides a click-and-check API for automated in browser smoke tests.
+
 ### Strategies
 
 **From:** https://github.com/kylpo/react-playbook/blob/master/best-practices/react.md
