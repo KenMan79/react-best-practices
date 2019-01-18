@@ -207,7 +207,9 @@ Primitive components are those that take in only primitives as their props and a
     |   ├── actions.js
     |   ├── index.js
     |   ├── operations.js
+    |   ├── models.js  // See redux-orm
     |   ├── reducers.js
+    |   ├── schema.js  // See normalizr
     |   ├── selectors.js
     |   ├── types.js
     |   └── utils.js
