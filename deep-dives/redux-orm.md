@@ -110,3 +110,93 @@ Uses a QuerySet class to manage collections. A QuerySet knows the Model type and
 For many-to-many relationships, a QuerySet is created to manage this relationship.
 
 E.g. `Lance` with `pilots: many("Pilot")` creates a LancePilot class and table.
+
+#### Examples
+
+Using Reselect to return an entities Session:
+
+```javascript
+import {createSelector} from "reselect";
+import schema from "./schema";
+
+export const selectEntities = state => state.entities;
+
+export const getEntitiesSession = createSelector(
+    selectEntities,
+    entities => schema.from(entities),
+);
+```
+
+Creating a generic updateEntity reducer:
+
+```javascript
+export function updateEntity(state, payload) {
+    const {itemType, itemID, newItemAttributes} = payload;
+
+    const session = schema.from(state);
+    const ModelClass = session[itemType];
+
+    let newState = state;
+
+    if(ModelClass.hasId(itemID)) {
+        const modelInstance = ModelClass.withId(itemID);
+
+        modelInstance.update(newItemAttributes);
+
+        newState = session.reduce();
+    }
+
+    return newState;
+}
+```
+
+Helper functions:
+
+```javascript
+export function getModelByType(session, itemType, itemID) {
+    const modelClass = session[itemType];
+    const model = modelClass.withId(itemID);
+    return model;
+}
+
+export function getModelIdentifiers(model) {
+    return {
+        itemID : model.getId(),
+        itemType : model.getClass().modelName,
+    };
+}
+```
+
+Modifying a Session instance (using internal state):
+
+```javascript
+const session = schema.from(entities);
+const {Pilot} = session;
+
+const pilot = Pilot.withId(pilotId);
+pilot.name = "Natasha Kerensky";
+
+// Immutably apply updates, then point the session at the updated state object.
+session.state = session.reduce();
+
+// All field/model lookups now use the updated state object
+```
+
+Note: Do not use this on a shared session, as it does create side-effects. If you need to access a shared session, create a new one instead:
+
+```javascript
+export function getUnsharedEntitiesSession(state) {
+    const entities = selectEntities(state);
+    return schema.from(entities);
+}
+```
+
+**Reducer pattern:**
+
+Reducers typically move in this order:
+
+1. Extract parameters from incoming data
+2. Create a Session
+3. Queue updates
+4. Apply updates using `session.reduce()`
+5. return state
