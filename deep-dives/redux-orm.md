@@ -1,6 +1,6 @@
 # redux-orm
 
-This is a repository for my own understanding of redux-orm and Redux structuring in general, as I read the article:  
+This is a repository for my own understanding of redux-orm and Redux structuring in general. I will be using this to document my notes while reading:  
 
 [Practical Redux](https://blog.isquaredsoftware.com/series/practical-redux/)
 
