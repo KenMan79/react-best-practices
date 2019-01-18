@@ -102,3 +102,11 @@ Once a Model object has been created, it turns into a denormalized state. That m
 ### Updates
 
 Uses an internal state that queues up actions in a "local redux". The underlying implementation creates actions that are passed in a reducer-like way. These changes are applied immutably, in-sequence to produce a final result.
+
+### Managing Relations
+
+Uses a QuerySet class to manage collections. A QuerySet knows the Model type and contains a list of Ids.
+
+For many-to-many relationships, a QuerySet is created to manage this relationship.
+
+E.g. `Lance` with `pilots: many("Pilot")` creates a LancePilot class and table.
