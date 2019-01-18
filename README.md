@@ -388,6 +388,11 @@ https://date-fns.org/
 
 Date/Time formatting with a functional paradigm and localization.
 
+**dayjs**  
+https://github.com/iamkun/dayjs
+
+"Day.js is a minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers with a largely Moment.js-compatible API."
+
 **Moment**  
 https://github.com/moment/moment/
 
