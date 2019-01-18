@@ -11,8 +11,7 @@ Forking this repo is great if you want to create your own repo with your decisio
 ### Patterns
 
 **Flux Pattern**  
-[Flux explained](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)  
-[Redux](https://redux.js.org/)
+https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207  
 
 **Render Props Pattern**  
 https://medium.freecodecamp.org/how-to-develop-your-react-superpowers-with-the-render-props-pattern-b74e68c6d053
@@ -47,6 +46,25 @@ https://github.com/ReactTraining/react-router
 
 Guide:  
 https://reacttraining.com/react-router/web/guides/quick-start
+
+### State Management
+
+**Redux**  
+https://redux.js.org/
+
+**Middleware**  
+
+**Redux Thunk**  
+https://github.com/reduxjs/redux-thunk
+
+"Thunks are the recommended middleware for basic Redux side effects logic, including complex synchronous logic that needs access to the store, and simple async logic like AJAX requests."
+
+**Redux-Sagas**  
+https://github.com/redux-saga/redux-saga
+
+Similar concept to thunk using Middleware to control side-effects in a React-Redux application, but with the added bonus of using ES6 Generators to control async flow and increase readability.
+
+[More on Generators](https://redux-saga.js.org/docs/ExternalResources.html)
 
 ### State Structure
 
