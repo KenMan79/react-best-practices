@@ -52,7 +52,7 @@ https://reacttraining.com/react-router/web/guides/quick-start
 **Redux**  
 https://redux.js.org/
 
-**Middleware**  
+#### Middleware
 
 **Redux Thunk**  
 https://github.com/reduxjs/redux-thunk
@@ -159,21 +159,21 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 ├── /app or /src
 │   ├── /redux/  // See "Ducks"
 │   ├── /scenes/
-│   |   ├── /App/
+│   |   ├── /App
 │   |   |   ├── /_/
 │   |   |   ├── /App.js
 │   |   |   └── /index.js
 |   |   ├── /MyScene/
 |   |   |   ├── /__tests__/
-|   |   |   ├── /_/
-|   |   |   |   ├── /MySubcomponent/
+|   |   |   ├── /_
+|   |   |   |   ├── /MySubcomponent
 |   |   |   |       ├── /__tests__/
 |   |   |   |       ├── /MySubcomponent.js
 │   |   |   |       └── /index.js
 │   |   |   ├── /MyScene.js
 │   |   |   └── /index.js
 │   ├── /shared/
-|   |   ├── /SharedAppSpecificComponent/
+|   |   ├── /SharedAppSpecificComponent
 |   |       ├── /__tests__/
 |   |       ├── /SharedAppSpecificComponent.js
 |   |       └── /index.js
@@ -181,7 +181,7 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 |
 |
 ├── /lib
-|   ├── /Button/
+|   ├── /Button
 |       ├── /__tests__/
 |       ├── /Button.js
 |       └── /index.js
