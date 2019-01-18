@@ -4,7 +4,7 @@ This is a repository for my own understanding of redux-orm and Redux structuring
 
 [Practical Redux](https://blog.isquaredsoftware.com/series/practical-redux/)
 
-[Practical Redux Training Course]()
+[Practical Redux Training Course](https://blog.isquaredsoftware.com/2017/11/practical-redux-educative-course/)
 
 **Assumed knowledge:** ORM Libraries (at least the concept) and relational table schemas
 
