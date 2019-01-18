@@ -204,10 +204,12 @@ Primitive components are those that take in only primitives as their props and a
 ├── /redux/
     └── /MyDuck/
     |   ├── /__tests__/
+    |   ├── /models  // See redux-orm
+    |   |   ├── index.js
+    |   |   └── schema.js
     |   ├── actions.js
     |   ├── index.js
     |   ├── operations.js
-    |   ├── models.js  // See redux-orm
     |   ├── reducers.js
     |   ├── schema.js  // See normalizr
     |   ├── selectors.js
@@ -359,6 +361,8 @@ Library that creates Object Relational Mapping (ORM) using the aforementioned st
 
 Guide to using redux-orm and Redux structuring as a whole:  
 https://blog.isquaredsoftware.com/series/practical-redux/
+
+My personal deep-dive found [here](deep-dives/redux-orm.md)
 
 ### Styling
 
