@@ -278,7 +278,7 @@ Spies, stubs and mocks
 **Cypress**  
 https://www.cypress.io/
 
-Testing suite that provides a click-and-check API for automated in browser smoke tests.
+Testing suite that provides a click-and-check API for automated in-browser smoke tests.
 
 ### Strategies
 
