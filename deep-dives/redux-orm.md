@@ -101,7 +101,7 @@ Once a Model object has been created, it turns into a denormalized state. That m
 
 ### Updates
 
-Uses an internal state that queues up actions in a "local redux". The underlying implementation creates actions that are passed in a reducer-like way. These changes are applied immutably, in-sequence to produce a final result.
+Uses an internal state that queues up actions in a "local redux". The underlying implementation creates actions that are passed in a reducer-like way. These changes are applied immutably and in-sequence to produce a final result.
 
 ### Managing Relations
 
