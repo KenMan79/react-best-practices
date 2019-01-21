@@ -326,6 +326,38 @@ Great ESLint configs:
 [prettier-eslint](https://github.com/prettier/prettier-eslint)  
 [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)  
 
+## Source Control
+
+### Git
+
+#### Repositories
+
+[Github](https://github.com/)
+
+[BitBucket](https://bitbucket.org/)
+
+#### Branch Strategies
+
+**From:** http://www.guyroutledge.co.uk/blog/git-branch-naming-conventions/  
+
+`type/component-name/title`
+
+Common Types:
+
+- feature
+- fix
+- hot-fix
+- refactor
+- update
+- upgrade
+- remove
+
+Component Name example:  
+`login-form`
+
+Title example:  
+`hoc-formik-input`
+
 ## Libraries
 
 ### Form Helpers
