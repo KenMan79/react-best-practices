@@ -336,7 +336,7 @@ Great ESLint configs:
 
 [BitBucket](https://bitbucket.org/)
 
-#### Branch Strategies
+#### Branch Naming Strategies
 
 **From:** http://www.guyroutledge.co.uk/blog/git-branch-naming-conventions/  
 
