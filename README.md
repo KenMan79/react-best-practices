@@ -142,6 +142,7 @@ Normalized data structures by Id (Relational Table Model)
   simpleDomainData2: {...},
 }
 ```
+
 Removes the deeply nested structures as your state grows in size and keeps components from re-rendering accidentally.
 
 ### Folder Structure
@@ -190,6 +191,7 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 ├── /node_modules/
 └── package.json
 ```
+
 https://github.com/kylpo/react-playbook/blob/master/component-architecture/5_Example-App-Structure.md
 
 **/lib/ explanation:**
@@ -395,7 +397,7 @@ https://github.com/paularmstrong/normalizr
 Especially useful for taking in schemas of data input and producing an "entities" object and a "result" object. "Entities" is of the structure above in "State Structure" where it is a normalized relational list. "Result" is the list of ids.
 
 **redux-orm**  
-https://github.com/tommikaikkonen/redux-orm 
+https://github.com/tommikaikkonen/redux-orm
 
 Library that creates Object Relational Mapping (ORM) using the aforementioned structure.
 
