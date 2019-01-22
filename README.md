@@ -206,12 +206,13 @@ Primitive components are those that take in only primitives as their props and a
     |   ├── /__tests__/
     |   ├── /models  // See redux-orm
     |   |   ├── index.js
-    |   |   └── schema.js
+    |   |   ├── MyDuckModel1.js
+    |   |   └── MyDuckModel2.js
     |   ├── actions.js
     |   ├── index.js
     |   ├── operations.js
     |   ├── reducers.js
-    |   ├── schema.js  // See normalizr
+    |   ├── schema.js  // See normalizr/redux-orm
     |   ├── selectors.js
     |   ├── types.js
     |   └── utils.js
