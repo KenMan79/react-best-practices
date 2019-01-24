@@ -435,13 +435,6 @@ A library of Higher-Order-Functions and a compose function to ease your move tow
 
 Note: This library is no longer being updated with new features by its creator. With Hooks on the horizon, the React Development team is suggesting a move to that API.
 
-**Ramda**  
-https://github.com/ramda/ramda
-
-Emphasizes pure functional code. Functions written in Ramda are pure and side-effect free, making them easy to test. They are also automatically curried, giving you the ability to partially apply parameters and pass back a new function.
-
-Currying explanation: [Why Curry Helps](https://hughfdjackson.com/javascript/why-curry-helps/)
-
 ### Miscellaneous Helpers
 
 **date-fns**  
@@ -517,9 +510,3 @@ https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
 
 **Routing**  
 https://medium.com/@algfry12/react-router-best-practices-9c564388f4d3
-
-**Symbolic Linking (i.e. get rid of import '../../../etc.')**  
-https://medium.com/@justintulk/solve-module-import-aliasing-for-webpack-jest-and-vscode-74007ce4adc9
-
-**Utilities**  
-https://blog.bitsrc.io/11-javascript-utility-libraries-you-should-know-in-2018-3646fb31ade
