@@ -66,7 +66,7 @@ Similar concept to thunk using Middleware to control side-effects in a React-Red
 
 [More on Generators](https://redux-saga.js.org/docs/ExternalResources.html)
 
-### State Structure
+### State Structure - *Under Review*
 
 **From:** https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape
 
@@ -145,7 +145,7 @@ Normalized data structures by Id (Relational Table Model)
 
 Removes the deeply nested structures as your state grows in size and keeps components from re-rendering accidentally.
 
-### Folder Structure
+### Folder Structure - *Under Review* 
 
 ```
 .
@@ -199,7 +199,7 @@ Every component that is not "app specific" or a *primitive component* can be a c
 
 Primitive components are those that take in only primitives as their props and are functionally pure.
 
-#### Redux "Ducks"
+#### Redux "Ducks" - *Under Review*
 
 ```
 .
@@ -248,7 +248,7 @@ SideBarSwitch - [ComponentName][Type]
 ChatConversation - [Page/Context][ComponentName]  
 ChatConversationName - [Page/Context][ComponentName]  
 
-### Component Creation
+### Component Creation - *Under Review*
 
 - Write a stateless functional component first
   - if (component requires state or life-cycle) Make stateful class
@@ -260,7 +260,7 @@ ChatConversationName - [Page/Context][ComponentName]
 
 ## Styling
 
-**SASS**  
+**SASS** - ***Under comparison to Styled Components***  
 https://sass-lang.com/
 
 Gives you the ability to nest your CSS, create mixins, among other things.
@@ -391,12 +391,12 @@ Creates a selector where the first functions passed in compute props for a final
 
 This keeps the state from needlessly causing components to re-render.
 
-**Normalizr**  
+**Normalizr - *Under comparison to Normalizr/Reselect vs redux-orm/Reselect***  
 https://github.com/paularmstrong/normalizr
 
 Especially useful for taking in schemas of data input and producing an "entities" object and a "result" object. "Entities" is of the structure above in "State Structure" where it is a normalized relational list. "Result" is the list of ids.
 
-**redux-orm**  
+**redux-orm - *Under comparison to Normalizr/Reselect vs redux-orm/Reselect***  
 https://github.com/tommikaikkonen/redux-orm
 
 Library that creates Object Relational Mapping (ORM) using the aforementioned structure.
@@ -453,16 +453,6 @@ Currying explanation: [Why Curry Helps](https://hughfdjackson.com/javascript/why
 https://date-fns.org/
 
 Date/Time formatting with a functional paradigm and localization.
-
-**dayjs**  
-https://github.com/iamkun/dayjs
-
-"Day.js is a minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers with a largely Moment.js-compatible API."
-
-**Moment**  
-https://github.com/moment/moment/
-
-Date/Time related formatting
 
 ## IDEs
 
