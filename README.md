@@ -151,7 +151,7 @@ Normalized data structures by Id (Relational Table Model)
 
 Removes the deeply nested structures as your state grows in size and keeps components from re-rendering accidentally.
 
-### Folder Structure - *Under Review* 
+### Folder Structure - *Under Review*
 
 ```
 .
@@ -487,7 +487,7 @@ http://reactjsnewsletter.com/
 ### Articles
 
 **Good Starting Points:**  
-https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md
+https://github.com/markerikson/react-redux-links
 
 **Folder Structure**  
 https://github.com/kylpo/react-playbook/blob/master/component-architecture/3_Multiple-Components.md
