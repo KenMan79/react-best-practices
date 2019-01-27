@@ -6,6 +6,12 @@ Being that this is a public repo, I hope that people will not only take what the
 
 Forking this repo is great if you want to create your own repo with your decisions, using this as a starting point.
 
+*Updated 1-27-19*
+
+The repo has taken a narrowed down form from everything suggested to what I'm using in my own projects. This is a vetting process and what you see here is what I eventually chose.
+
+To keep this as a good reference template (or guide), I'm going to keep this narrow approach. If you have any differing opinions, let me know as an issue! Or feel free to fork this document and insert your own conclusions.
+
 ## Architecture
 
 ### Patterns
@@ -210,21 +216,14 @@ Primitive components are those that take in only primitives as their props and a
     |   |   ├── index.js
     |   |   ├── MyDuckModel1.js
     |   |   └── MyDuckModel2.js
-    |   ├── /schema  // See redux-orm / normalizr
-    |   |   ├── /formatters/
-    |   |   |   ├── index.js
-    |   |   |   ├── MyDuckModel1Formatter.js
-    |   |   |   └── MyDuckModel2Formatter.js
-    |   |   ├── index.js
-    |   |   ├── normalize.js  // normalizr
-    |   |   └── orm.js  // redux-orm
     |   ├── actions.js
     |   ├── index.js
-    |   ├── operations.js
     |   ├── reducers.js
     |   ├── selectors.js
     |   ├── types.js
     |   └── utils.js
+    ├── rootReducer.js
+    ├── orm.js  // See redux-orm
     └── commonTypes.js
 ```
 
@@ -260,18 +259,10 @@ ChatConversationName - [Page/Context][ComponentName]
 
 ## Styling
 
-**SASS** - ***Under comparison to Styled Components***  
-https://sass-lang.com/
+**Semantic UI React**  
+https://github.com/Semantic-Org/Semantic-UI-React
 
-Gives you the ability to nest your CSS, create mixins, among other things.
-
-Guide for SASS in React:  
-https://hugogiraudel.com/2015/06/18/styling-react-components-in-sass/
-
-**Styled Components**  
-https://www.styled-components.com/
-
-Scope your styles on a component level, directly in your JS file. Allows for computing styles at a functional level in JS rather than relying on pre-compilers.
+A JQuery-free version of Semantic UI that comes with React-based components. Semantic UI is great for themeing as well.
 
 ## Testing
 
@@ -386,12 +377,7 @@ Creates a selector where the first functions passed in compute props for a final
 
 This keeps the state from needlessly causing components to re-render.
 
-**Normalizr - *Under comparison to Normalizr/Reselect vs redux-orm/Reselect***  
-https://github.com/paularmstrong/normalizr
-
-Especially useful for taking in schemas of data input and producing an "entities" object and a "result" object. "Entities" is of the structure above in "State Structure" where it is a normalized relational list. "Result" is the list of ids.
-
-**redux-orm - *Under comparison to Normalizr/Reselect vs redux-orm/Reselect***  
+**redux-orm**
 https://github.com/tommikaikkonen/redux-orm
 
 Library that creates Object Relational Mapping (ORM) using the aforementioned structure.
@@ -399,7 +385,8 @@ Library that creates Object Relational Mapping (ORM) using the aforementioned st
 Guide to using redux-orm and Redux structuring as a whole:  
 https://blog.isquaredsoftware.com/series/practical-redux/
 
-My personal deep-dive found [here](deep-dives/redux-orm.md)
+**Recommended Course:**  
+[Practical Redux Course by Mark Erikson](https://www.educative.io/collection/5687753853370368/5707702298738688?authorName=Mark%20Erikson)
 
 ### Styling
 
