@@ -58,6 +58,14 @@ https://reacttraining.com/react-router/web/guides/quick-start
 **Redux**  
 https://redux.js.org/
 
+**Redux DevTools**  
+[Chrome Extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+
+This is a must have for Redux development.
+
+Great article if you want to hone your skills:  
+https://codeburst.io/redux-devtools-for-dummies-74566c597d7
+
 #### Middleware
 
 **Redux Thunk**  
