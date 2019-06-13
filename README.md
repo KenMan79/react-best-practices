@@ -80,78 +80,83 @@ Similar concept to thunk using Middleware to control side-effects in a React-Red
 
 [More on Generators](https://redux-saga.js.org/docs/ExternalResources.html)
 
-### State Structure - *Under Review*
-
-**From:** https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape
+### State Structure
 
 Normalized data structures by Id (Relational Table Model)
 
 ```javascript
 {
-  posts: {
-    byId: {
-      "post1" : {
-        id: "post1"
-        author: "author1"
-        body: "..."
-        comments: ["comment1", "comment2"]
+  entities: {
+    Post: {
+      itemById: {
+        "post1" : {
+          id: "post1"
+          author: "author1"
+          body: "..."
+          comments: ["comment1", "comment2"]
+        },
+        "post2" : {
+          id: "post2"
+          author: "author2"
+          body: "..."
+          comments: ["comment3", "comment4", "comment5"]
+        },
       },
-      "post2" : {
-        id: "post2"
-        author: "author2"
-        body: "..."
-        comments: ["comment3", "comment4", "comment5"]
-      },
+      items: ["post1", "post2"],
+      meta: {},
     },
-    allIds: ["post1", "post2"],
-  },
-  comments: {
-    byId: {
-      "comment1": {
-        id: "comment1",
-        author: "user2",
-        comment: "...",
+    User: {
+      itemsById: {
+        "user1": {
+          username: "user1",
+          name: "User 1",
+        },
+        "user2": {
+          username: "user2",
+          name: "User 2",
+        },
+        "user3": {
+          username: "user3",
+          name: "User 3",
+        },
       },
-      "comment2": {
-        id: "comment2",
-        author: "user3",
-        comment: "...",
-      },
-      "comment3": {
-        id: "comment3",
-        author: "user3",
-        comment: "...",
-      },
-      "comment4": {
-        id: "comment4",
-        author: "user1",
-        comment: "...",
-      },
-      "comment5": {
-        id: "comment5",
-        author: "user3",
-        comment: "...",
-      },
+      items: ["user1", "user2", "user3"],
+      meta: {},
     },
-    allIds: ["comment1", "comment2", "comment3", "comment4", "comment5"],
-  },
-  users: {
-    byId: {
-      "user1": {
-        username: "user1",
-        name: "User 1",
-      },
-      "user2": {
-        username: "user2",
-        name: "User 2",
-      },
-      "user3": {
-        username: "user3",
-        name: "User 3",
-      },
+    Comment: {
+      itemsById: {
+          "comment1": {
+            userId: "user1",
+            postId: "post1",
+            body: { ... },
+          },
+          "comment2": {
+            userId: "user2",
+            postId: "post2",
+            body: { ... },
+          },
+          "comment3": {
+            userId: "user3",
+            postId: "post3",
+            body: { ... },
+          },
+          "comment4": {
+            userId: "user4",
+            postId: "post4",
+            body: { ... },
+          },
+          "comment5": {
+            userId: "user5",
+            postId: "post5",
+            body: { ... },
+          },
+        },
+        items: ["comment1", "comment2", "comment3", "comment4", "comment5"],
+        meta: {}
     },
-    allIds: ["user1", "user2", "user3"]
   },
+  
+  
   simpleDomainData1: {...},
   simpleDomainData2: {...},
 }
@@ -159,7 +164,7 @@ Normalized data structures by Id (Relational Table Model)
 
 Removes the deeply nested structures as your state grows in size and keeps components from re-rendering accidentally.
 
-### Folder Structure - *Under Review*
+### Folder Structure
 
 ```
 .
@@ -192,7 +197,7 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 |   |       ├── /__tests__/
 |   |       ├── /SharedAppSpecificComponent.js
 |   |       └── /index.js
-│   └── /types/
+│   └── /commonTypes.js
 |
 |
 ├── /lib
@@ -255,10 +260,10 @@ SideBarSwitch - [ComponentName][Type]
 ChatConversation - [Page/Context][ComponentName]  
 ChatConversationName - [Page/Context][ComponentName]  
 
-### Component Creation - *Under Review*
+### Component Creation
 
 - Write a stateless functional component first
-  - if (component requires state or life-cycle) Make stateful class
+  - if (component requires state or life-cycle) Consider Hooks
   - if (component is comprised of multiple components or smaller pieces of functionality) Create container component
   - Move shared components out
     - if (app dependent) Keep in shared/MyComponent
@@ -454,19 +459,6 @@ https://www.jetbrains.com/webstorm/
 
 A JetBrains product who also make IntelliJ and ReSharper. It's not free, but has a mix of monthly and yearly subscription options for the license.
 
-## Roadmaps and Future Functionality
-
-**React 16.x**  
-https://reactjs.org/blog/2018/11/27/react-16-roadmap.html
-
-Things to look forward to:
-
-- Suspense
-  - Fallback component while a component is rendering. E.g. abstracts need for loading gifs.
-- Hooks
-  - Add state to function components. Improves optimizing at scale and removes need for "wrapper hell"
-- Concurrent
-  - Prioritize renders
 
 ## Resources, Articles and Podcasts
 
