@@ -192,13 +192,13 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 │   |   |   |       └── /index.js
 │   |   |   ├── /MyScene.js
 │   |   |   └── /index.js
-│   └── /shared/
-|       ├── /SharedAppSpecificComponent
-|       |   ├── /__tests__/
-|       |   ├── /SharedAppSpecificComponent.js
-|       |   └── /index.js
-│       └── /types.js
-|
+│   ├── /shared/
+|   |   ├── /SharedAppSpecificComponent
+|   |   |   ├── /__tests__/
+|   |   |   ├── /SharedAppSpecificComponent.js
+|   |   |   └── /index.js
+│   |   └── /types.js
+|   └── /utils/ // helper functions, etc.
 |
 ├── /lib
 |   ├── /Button
