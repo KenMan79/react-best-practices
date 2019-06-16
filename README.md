@@ -219,11 +219,12 @@ Every component that is not "app specific" or a *primitive component* can be a c
 
 Primitive components are those that take in only primitives as their props and are functionally pure.
 
-#### Redux "Ducks" - *Under Review*
+#### Redux "Ducks"
 
 ```
 .
 ├── /ducks/
+    ├── /entities/ // See redux-orm
     └── /MyDuck/
     |   ├── /__tests__/
     |   ├── /models  // See redux-orm
@@ -236,6 +237,7 @@ Primitive components are those that take in only primitives as their props and a
     |   ├── selectors.js
     |   ├── types.js
     |   └── utils.js
+    ├── /utils/ // Reducer Utils + more (see redux-orm)
     ├── rootReducer.js
     ├── orm.js  // See redux-orm
     └── commonTypes.js
