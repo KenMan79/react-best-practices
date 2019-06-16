@@ -225,7 +225,7 @@ Primitive components are those that take in only primitives as their props and a
 .
 ├── /ducks/
     ├── /entities/ // See redux-orm
-    └── /MyDuck/
+    ├── /MyDuck/
     |   ├── /__tests__/
     |   ├── /models  // See redux-orm
     |   |   ├── index.js
