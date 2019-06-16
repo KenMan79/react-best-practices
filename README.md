@@ -198,6 +198,7 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 |   |   |   ├── /SharedAppSpecificComponent.js
 |   |   |   └── /index.js
 │   |   └── /types.js
+|   ├── /store/ // configureStore.js + middleware
 |   └── /utils/ // helper functions, etc.
 |
 ├── /lib
