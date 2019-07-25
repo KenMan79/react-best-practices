@@ -305,10 +305,13 @@ https://jestjs.io/
 
 Most popular React testing library. Comes with snapshot comparisons which is very useful for testing pure components.
 
-**Sinon**  
-https://sinonjs.org/
+**Note:** Function spies are now included included in Jest, so I've removed `sinon` for now
 
-Spies, stubs and mocks
+**Enzyme**  
+https://airbnb.io/enzyme/
+
+A popular addition to Jest that provides additional functionality to traversing through component trees,
+as well as helper functions for testing, triggering user events being an example.
 
 **Cypress**  
 https://www.cypress.io/
@@ -466,7 +469,6 @@ Another IDE that is also very popular amoung web devs.
 https://www.jetbrains.com/webstorm/
 
 A JetBrains product who also make IntelliJ and ReSharper. It's not free, but has a mix of monthly and yearly subscription options for the license.
-
 
 ## Resources, Articles and Podcasts
 
