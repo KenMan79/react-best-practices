@@ -245,23 +245,18 @@ Primitive components are those that take in only primitives as their props and a
 ```
 .
 ├── /ducks/
-    ├── /entities/ // See redux-orm
     ├── /MyDuck/
     |   ├── /__tests__/
-    |   ├── /models  // See redux-orm
-    |   |   ├── index.js
-    |   |   ├── MyDuckModel1.js
-    |   |   └── MyDuckModel2.js
     |   ├── actions.js
     |   ├── index.js
     |   ├── reducers.js
     |   ├── selectors.js
     |   ├── types.js
+    |   ├── urls.js
     |   └── utils.js
     ├── /utils/ // Reducer Utils + more (see redux-orm)
     ├── rootReducer.js
-    ├── orm.js  // See redux-orm
-    └── commonTypes.js
+    └── types.js
 ```
 
 https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
@@ -413,17 +408,6 @@ https://github.com/reduxjs/reselect
 Creates a selector where the first functions passed in compute props for a final function. If none of those props have changed, then that function is not run and the result from the previous invocation is returned.
 
 This keeps the state from needlessly causing components to re-render.
-
-**redux-orm**
-https://github.com/tommikaikkonen/redux-orm
-
-Library that creates Object Relational Mapping (ORM) using the aforementioned structure.
-
-Guide to using redux-orm and Redux structuring as a whole:  
-https://blog.isquaredsoftware.com/series/practical-redux/
-
-**Recommended Course:**  
-[Practical Redux Course by Mark Erikson](https://www.educative.io/collection/5687753853370368/5707702298738688?authorName=Mark%20Erikson)
 
 ### Styling
 
