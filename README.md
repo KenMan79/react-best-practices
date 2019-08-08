@@ -261,23 +261,7 @@ Primitive components are those that take in only primitives as their props and a
 
 https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
 
-## Best Practices and Coding Style
-
-### Naming Convention
-
-#### Components
-
-**From:** https://hackernoon.com/react-components-naming-convention-%EF%B8%8F-b50303551505
-
-[Domain]|[Page/Context]|ComponentName|[Type]
-
-Examples:
-
-ACommunityAddToShortListButton - [Domain][ComponentName][Type]  
-SideBar - [ComponentName]  
-SideBarSwitch - [ComponentName][Type]  
-ChatConversation - [Page/Context][ComponentName]  
-ChatConversationName - [Page/Context][ComponentName]  
+## Coding Style
 
 ### Component Creation
 
@@ -394,7 +378,7 @@ Component Name example:
 Title example:  
 `hoc-formik-input`
 
-## Libraries
+## Libraries - *Under Construction (probably for all time, given the state of Javascript)*
 
 ### Form Helpers
 
@@ -436,22 +420,6 @@ return (
   <button className={`button-default-style ${isActive ? "active" : ""}`} />
 );
 ```
-
-### Functional Programming Helpers
-
-**Recompose**  
-https://github.com/acdlite/recompose
-
-A library of Higher-Order-Functions and a compose function to ease your move towards more reusable, functional components.
-
-Note: This library is no longer being updated with new features by its creator. With Hooks on the horizon, the React Development team is suggesting a move to that API.
-
-### Miscellaneous Helpers
-
-**date-fns**  
-https://date-fns.org/
-
-Date/Time formatting with a functional paradigm and localization.
 
 ## IDEs
 
