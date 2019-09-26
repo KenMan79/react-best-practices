@@ -1,47 +1,33 @@
 # React Best Practices
 
-This repo is for the purposes of a high-level view of React architecture and best practices. As this repo grows, more ideas will be introduced and comparisons will be made with pros and cons.
+Oh, hi there!
 
-Being that this is a public repo, I hope that people will not only take what they can from the repo's information, but contribute as well. Feel free to submit pull requests and I will add your information to the document.
+This repo was originally created in an effort to bring together a collective template, so that I may expand on it either 
+via through my own learning, or through pull requests from the community.
 
-Forking this repo is great if you want to create your own repo with your decisions, using this as a starting point.
+But alas, as technology always does, things change quickly. Which is great for the community! But bad
+for a repo that touts such a high-flautin title as "React Best Practices".
 
-*Updated 1-27-19*
+If you're reading this however, that means you found me! I secretly obsess over the traffic tab in Github... hope that doesn't weird you out...
 
-The repo has taken a narrowed down form from everything suggested to what I'm using in my own projects. This is a vetting process and what you see here is what I eventually chose.
+I must confess though, that life only affords me so much time, and while much of this repo is still relevant,
+I won't be able to commit to it as I had originally hoped.
 
-To keep this as a good reference template (or guide), I'm going to keep this narrow approach. If you have any differing opinions, let me know as an issue! Or feel free to fork this document and insert your own conclusions.
+I do encourge anyone looking at this repo to clone/fork it, as at the very least, it can still make for a good template.
 
-*Updated 7-22-19*
+I will do my best to add things as I go, but while my current job is amazing (I'm 100% remote now!), it doesn't allow me to stay completely up to date,
+due to much legacy tech debt (Backbone... I'm looking at you, buddy). As soon as that changes, I plan to be back up to speed with all the latest and greatest!
 
-I am in the process of removing `redux-orm` from my stack. I have several reasons for this, namely:
+So take what you can here with a grain of suspicion, and do what I do, which is to subscribe to publications, forums, and continue learning always.
 
-- Too much *magic* (Your data is hidden behind objects that, upon runtime inspection, reveal no useful information. This can be resolved by using a `.ref` to get it's data, but that would defeat the purpose)
-- Hard to onboard new members to the library
-  - Steep learning curve
-  - Use of classes as interfaces with only documentation to support their usage
-  - Difficult to debug
-  - Community is small (currently only has 2,500 stars on Github)
-- Still hasn't achieved RC status (last major release introduced breaking changes)
-
-For these reasons, I'm going to move back towards `normalizr`, with suggestions on how to use it correctly. When used properly, you can achieve the same normalized state status that `redux-orm` achieves, while still dealing with good ole' fashioned JS objects.
-`normalizr` also has a much larger community, sitting at 17,000 stars on Github, and has a long history.
-
-I have always found that the key to longevity/usability/readability/maintainability in Javascript these days is how many people back your library/architecture/whatever... *Hence React*
-
-I also want to explore the new hook `useReducer` and how this can be used to minimize the need for boilerplate when it comes to state managment as a whole.
-
-More updates to come...
+Good luck out there!
 
 ## Architecture
 
 ### Patterns
 
-**Flux Pattern**  
+**Flux Pattern (uni-directional)**  
 https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207  
-
-**Render Props Pattern**  
-https://medium.freecodecamp.org/how-to-develop-your-react-superpowers-with-the-render-props-pattern-b74e68c6d053
 
 ### Functional Paradigm
 
@@ -254,7 +240,7 @@ Primitive components are those that take in only primitives as their props and a
     |   ├── types.js
     |   ├── urls.js
     |   └── utils.js
-    ├── /utils/ // Reducer Utils + more (see redux-orm)
+    ├── /utils/ // Reducer specific utils
     ├── rootReducer.js
     └── types.js
 ```
@@ -296,11 +282,6 @@ https://airbnb.io/enzyme/
 
 A popular addition to Jest that provides additional functionality to traversing through component trees,
 as well as helper functions for testing, triggering user events being an example.
-
-**Cypress**  
-https://www.cypress.io/
-
-Testing suite that provides a click-and-check API for automated in-browser smoke tests.
 
 ### Strategies
 
@@ -348,15 +329,7 @@ Great ESLint configs:
 
 ## Source Control
 
-### Git
-
-#### Repositories
-
-[Github](https://github.com/)
-
-[BitBucket](https://bitbucket.org/)
-
-#### Branch Naming Strategies
+### Branch Naming Strategies
 
 **From:** http://www.guyroutledge.co.uk/blog/git-branch-naming-conventions/  
 
@@ -378,7 +351,7 @@ Component Name example:
 Title example:  
 `hoc-formik-input`
 
-## Libraries - *Under Construction (probably for all time, given the state of Javascript)*
+## Libraries
 
 ### Form Helpers
 
@@ -427,13 +400,3 @@ return (
 https://code.visualstudio.com/
 
 Microsoft has opensourced this light-weight and highly extensible IDE. My personal favorite.
-
-**Atom**  
-https://atom.io/
-
-Another IDE that is also very popular amoung web devs.
-
-**Webstorm**  
-https://www.jetbrains.com/webstorm/
-
-A JetBrains product who also make IntelliJ and ReSharper. It's not free, but has a mix of monthly and yearly subscription options for the license.
