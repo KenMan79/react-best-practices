@@ -15,9 +15,6 @@ I won't be able to commit to it as I had originally hoped.
 
 I do encourge anyone looking at this repo to clone/fork it, as at the very least, it can still make for a good template.
 
-I will do my best to add things as I go, but while my current job is amazing (I'm 100% remote now!), it doesn't allow me to stay completely up to date,
-due to much legacy tech debt (Backbone... I'm looking at you, buddy). As soon as that changes, I plan to be back up to speed with all the latest and greatest!
-
 So take what you can here with a grain of suspicion, and do what I do, which is to subscribe to publications, forums, and continue learning always.
 
 Good luck out there!
