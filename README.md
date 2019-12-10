@@ -1,23 +1,7 @@
 # React Best Practices
 
-Oh, hi there!
-
-This repo was originally created in an effort to bring together a collective template, so that I may expand on it either 
-via through my own learning, or through pull requests from the community.
-
-But alas, as technology always does, things change quickly. Which is great for the community! But bad
-for a repo that touts such a high-flautin title as "React Best Practices".
-
-If you're reading this however, that means you found me! I secretly obsess over the traffic tab in Github... hope that doesn't weird you out...
-
-I must confess though, that life only affords me so much time, and while much of this repo is still relevant,
-I won't be able to commit to it as I had originally hoped.
-
-I do encourge anyone looking at this repo to clone/fork it, as at the very least, it can still make for a good template.
-
-So take what you can here with a grain of suspicion, and do what I do, which is to subscribe to publications, forums, and continue learning always.
-
-Good luck out there!
+__Update: 12/10/19__
+Updates to come...
 
 ## Architecture
 
