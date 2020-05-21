@@ -1,8 +1,5 @@
 # React Best Practices
 
-__Update: 12/10/19__
-Updates to come...
-
 ## Architecture
 
 ### Patterns
